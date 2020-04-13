@@ -88,6 +88,7 @@ class _TipCalculatorState extends State<TipCalculator> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 TextFormField(
+                  key: Key("billAmount"),
                   controller: _billAmountController,
                   keyboardType: TextInputType.numberWithOptions(decimal: true),
                   decoration: InputDecoration(
@@ -96,6 +97,7 @@ class _TipCalculatorState extends State<TipCalculator> {
                   ),
                 ),
                 TextFormField(
+                  key: Key("tipPercentage"),
                   controller: _tipPercentageController,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -103,8 +105,14 @@ class _TipCalculatorState extends State<TipCalculator> {
                     labelText: 'Tip %',
                   ),
                 ),
-                AwesomeText('Tip Amount: ${_getTipAmount()}'),
-                AwesomeText('Total Amount: ${_getTotalAmount()}'),
+                AwesomeText(
+                  'Tip Amount: ${_getTipAmount()}',
+                  key: Key('tipAmount'),
+                ),
+                AwesomeText(
+                  'Total Amount: ${_getTotalAmount()}',
+                  key: Key('totalAmount'),
+                ),
               ],
             ),
           ),
@@ -128,7 +136,10 @@ class _TipCalculatorState extends State<TipCalculator> {
 class AwesomeText extends StatelessWidget {
   final String text;
 
-  AwesomeText(this.text);
+  const AwesomeText(
+    this.text, {
+    Key key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
