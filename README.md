@@ -12,7 +12,7 @@ git clone https://github.com/rahulraj64/flutter_tip_calculator
 ```
 ### Step 2
 Open the starter project in Android Studio 3.6 or later. Make sure you use a recent version of Flutter, 1.12 or above.
-Then, open the lib/main.dart file and have a look at the source code to build the user interface of our app.
+Then, open the lib/main.dart file and have a look at the source code to build the user interface and functionality of our app.
 ### Step 3
 Then, open the ‘Terminal’ tab at the bottom of Android Studio and type ‘flutter packages get’ command to install Flutter dependencies for the project.
 Once done, click on the ‘Run’ button to build and run the starter project:
