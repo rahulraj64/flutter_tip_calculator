@@ -1,8 +1,13 @@
+// Copyright (c) 2020 Razeware LLC
+// Use of this source code is governed by the license that can be
+// found in the LICENSE section of the README file.
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(TipApp());
 
 class TipApp extends StatelessWidget {
+  // This widget is the root of the application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,6 +21,7 @@ class TipApp extends StatelessWidget {
 class TipCalculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // This method builds the UI of the Tip Calculator.
     return Scaffold(
       appBar: AppBar(
         title: Text('Tip Calculator!'),
@@ -52,6 +58,8 @@ class TipCalculator extends StatelessWidget {
   }
 }
 
+// This is our custom widget that is used to display the calculated values
+// and thus we can effectively use the composition feature of flutter
 class AwesomeText extends StatelessWidget {
   final String text;
 
