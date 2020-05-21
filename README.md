@@ -21,7 +21,7 @@ Once done, click on the ‘Run’ button to build and run the starter project:
 ## License
 
 ```
-Copyright (c) 2020 Razeware LLC
+Copyright (c) 2020 Rahul
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
